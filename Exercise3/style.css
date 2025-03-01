@@ -1,0 +1,101 @@
+
+body {
+    background-color: #f6b26b; 
+    color: #cc0000; 
+}
+
+#lyrics {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text {
+    font-size: 35px;  
+    font-family: "Over the Rainbow", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+}
+
+.hide {
+    color: #660000;  
+    transition: all .5s; 
+}
+
+.hide:hover {
+    opacity: 0; 
+    transform: translate(-20px,-20px) scale(0.5,0.5);
+    cursor: pointer; 
+}
+
+.understand {
+    transition: all 1s; 
+    color: #660000; 
+    display: inline-block; 
+}
+
+.understand:hover {
+    transform: rotate(180deg); 
+    cursor: pointer; 
+}
+
+.die {
+    display: inline-block; 
+    color: #660000; 
+    transition: all 2s 
+}
+
+.die:hover {
+    cursor: pointer; 
+    opacity: 0; 
+    transform: translateY(80px); 
+}
+
+.monstrous {
+    transition: 1s;
+    color:#660000; 
+}
+
+.monstrous:hover {
+    transform: scale(50,50); 
+    font-size: 70px; 
+    cursor: pointer; 
+}
+
+.tiptoe {
+    display: inline-block;
+    transition: 1s;
+    color:#660000; 
+}
+
+.tiptoe:hover {
+    transform: translate(-20px,-20px); 
+    cursor: pointer; 
+}
+
+.teddybear {
+    width: 400px; 
+    height: 400px; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    animation: moveteddybear 3s 0s infinite alternate;
+}
+
+@keyframes moveteddybear {
+    0% {top: 0; left:-10px; opacity:1;}
+    100% {top: 400px; left:-10px;} 
+}
+
+.brighterdays {
+    width: 380px; 
+    height: 380px; 
+    position: absolute;
+    top: -90px; 
+    left: 1020px;
+}
