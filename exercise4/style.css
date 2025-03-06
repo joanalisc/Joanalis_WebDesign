@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6a6b2;
+}
+
+h1 {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#spring {
+    width: 40%;
+    height: 40vh;
+    background-image: url(exercise4-images/spring.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 100px;
+    left: 540px;
+    position: absolute;
+    z-index: 100; 
+}
+
+@media screen and (max-width:1400px) {
+    body {
+        background-color:#f9d62e; 
+
+    }
+    #summer {
+        width: 40%;
+        height: 40vh; 
+        background-image: url(exercise4-images/summer.gif);
+        background-size:contain; 
+        background-position: absolute;
+        background-repeat: no-repeat;
+        top: 100px;
+        left: 540px;
+        z-index: 101; 
+
+}
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        background-color: #f47b20; 
+    }
+    #fall {
+        width: 60%;
+        height: 60vh; 
+        background-image: url(exercise4-images/fall.gif);
+        background-size:contain; 
+        background-position: absolute;
+        background-repeat: no-repeat;
+        top: 100px;
+        left: 540px;
+        z-index: 102; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #b3e3f4; 
+    }
+    #winter {
+        width: 50%;
+        height: 50vh; 
+        background-image: url(exercise4-images/winter.gif);
+        background-size:contain; 
+        background-position: absolute;
+        background-repeat: no-repeat;
+        top: 100px;
+        left: 540px;
+        z-index: 103; 
+    }
+}
